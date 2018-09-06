@@ -10,19 +10,19 @@ module ProjectSearch
 
     settings index: { number_of_shards: 3, number_of_replicas: 1 } do
       mapping do
-        indexes :name, type: 'string', :analyzer => 'snowball', :boost => 6
-        indexes :exact_name, type: 'string', :index => :not_analyzed, :boost => 2
+        indexes :name, type: 'text', :analyzer => 'snowball', :boost => 6
+        indexes :exact_name, type: 'text', :index => false, :boost => 2
 
-        indexes :description, type: 'string', :analyzer => 'snowball'
-        indexes :homepage, type: 'string'
-        indexes :repository_url, type: 'string'
-        indexes :repo_name, type: 'string'
-        indexes :latest_release_number, type: 'string', :analyzer => 'keyword'
-        indexes :keywords_array, type: 'string', :analyzer => 'keyword'
-        indexes :language, type: 'string', :analyzer => 'keyword'
-        indexes :normalized_licenses, type: 'string', :analyzer => 'keyword'
-        indexes :platform, type: 'string', :analyzer => 'keyword'
-        indexes :status, type: 'string', :index => :not_analyzed
+        indexes :description, type: 'text', :analyzer => 'snowball'
+        indexes :homepage, type: 'text'
+        indexes :repository_url, type: 'text'
+        indexes :repo_name, type: 'text'
+        indexes :latest_release_number, type: 'text', :analyzer => 'keyword'
+        indexes :keywords_array, type: 'text', :analyzer => 'keyword'
+        indexes :language, type: 'text', :analyzer => 'keyword'
+        indexes :normalized_licenses, type: 'text', :analyzer => 'keyword'
+        indexes :platform, type: 'text', :analyzer => 'keyword'
+        indexes :status, type: 'text', :index => false
 
         indexes :created_at, type: 'date'
         indexes :updated_at, type: 'date'
