@@ -13,4 +13,5 @@ RUN bundle install --jobs=4
 ADD . $APP_HOME
 RUN bundle exec rake assets:precompile
 
+RUN printenv
 RUN git show-ref --head --dereference HEAD |cut -d ' ' -f 1 > REVISION
