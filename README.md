@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/librariesio/libraries.io.svg?branch=master)](https://travis-ci.org/librariesio/libraries.io)
 [![Slack chat](https://slack.libraries.io/badge.svg)](https://slack.libraries.io)
 [![Open Source Helpers](https://www.codetriage.com/librariesio/libraries.io/badges/users.svg)](https://www.codetriage.com/librariesio/libraries.io)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ft438879%2Flibraries.io.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ft438879%2Flibraries.io?ref=badge_shield)
 
 Libraries.io helps developers find new open source libraries, modules and frameworks and keep track of ones they depend upon.
 
@@ -46,3 +47,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 Copyright (c) Tidelift, Inc. See [LICENSE](https://github.com/librariesio/libraries.io/blob/master/LICENSE.txt) for details.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ft438879%2Flibraries.io.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ft438879%2Flibraries.io?ref=badge_large)
